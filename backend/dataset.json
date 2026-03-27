@@ -1,0 +1,14 @@
+{
+  "problems": [
+    {
+      "title": "Two Sum",
+      "constraints": "2 <= nums.length <= 10^4\n-10^9 <= nums[i] <= 10^9\n-10^9 <= target <= 10^9\nOnly one valid answer exists.",
+      "editorial": "The optimal approach is to use a Hash Map. As we iterate through the array, we check if target - current_number exists in the hash map. If it does, we return the indices. If not, we add the current_number and its index to the hash map. This yields an O(N) time complexity."
+    },
+    {
+      "title": "Merge Intervals",
+      "constraints": "1 <= intervals.length <= 10^4\nintervals[i].length == 2\n0 <= starti <= endi <= 10^4",
+      "editorial": "First, we sort the intervals based on their start timings. Then, we iterate through the intervals. We maintain a list of merged intervals. If the current interval does not overlap with the previous one, append it. Otherwise, there is overlap, so we merge the current and previous intervals by updating the end of the previous interval."
+    }
+  ]
+}
